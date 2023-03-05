@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: 2010-09-09
+Resources:
+  Repository:
+    Type: 'AWS::CodeCommit::Repository'
+    Properties:
+      RepositoryName: s3
+      RepositoryDescription: S3 to Codecommit
+      Code:
+        BranchName: bucket
+        S3:
+          Bucket: repository-ops-io
+          Key: s3.zip
+          ObjectVersion: Km7s2m1Jd2FlcvoIi9v7n.KUenzjHZ5R
